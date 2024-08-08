@@ -17,6 +17,7 @@ import CustomerDetails from './pages/CustomerDetails';
 import VendorDetails from './pages/VendorDetails';
 import Reports from './pages/Reports';
 import Settings  from './pages/Settings';
+import UserManagement from './pages/UserManagement';
 
 const App = () => {
   return (
@@ -37,6 +38,7 @@ const App = () => {
         <Route path="/customer-details" element={<CustomerDetails />} />
         <Route path="/vendor-details" element={<VendorDetails />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/user-management" element={<UserManagement />} />
       </Routes>
     </Router>
   );

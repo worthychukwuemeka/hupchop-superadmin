@@ -24,13 +24,13 @@ function Settings() {
               <div className="content-sidebar-body">
                 <ul className="nav flex-column nxl-content-sidebar-item">
                   <li className="nav-item">
-                    <a className="nav-link active" href="settings-profile.html">
+                    <a className="nav-link active" href="/settings">
                       <i className="feather-user"></i>
                       <span>Profile Management</span>
                     </a>
                   </li>
                   <li className="nav-item">
-                    <a className="nav-link" href="settings-users.html">
+                    <a className="nav-link" href="/user-management">
                       <i className="feather-users"></i>
                       <span>User Management</span>
                     </a>
@@ -125,8 +125,60 @@ function Settings() {
               <div className="content-area-body">
                 <div className="card mb-0">
                   <div className="card-body">
+                    <div className="mb-5">
+                      <div className="wd-100 ht-100 position-relative overflow-hidden border border-gray-2 rounded">
+                        <img
+                          src="assets/images/logo-abbr.png"
+                          className="upload-pic img-fluid rounded h-100 w-100"
+                          alt=""
+                        />
+                        <div className="position-absolute start-50 top-50 end-0 bottom-0 translate-middle h-100 w-100 hstack align-items-center justify-content-center c-pointer upload-button">
+                          <i className="feather feather-camera" aria-hidden="true"></i>
+                        </div>
+                        <input className="file-upload" type="file" accept="image/*" />
+                      </div>
+                    </div>
 
+                    <div className="mb-5">
+                      <label className="form-label">Name</label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        placeholder="Worthy Chukwuemeka"
+                        readOnly
+                      />
+                      <small className="form-text text-muted text-danger">
+                        Cannot be edited *
+                      </small>
+                    </div>
+
+                    <div className="mb-5">
+                      <label className="form-label">Phone</label>
+                      <input
+                        type="tel"
+                        className="form-control"
+                        placeholder="+2347089167290"
+                        readOnly
+                      />
+                      <small className="form-text text-muted text-danger">
+                        Cannot be edited *
+                      </small>
+                    </div>
+
+                    <div className="mb-5">
+                      <label className="form-label">Email</label>
+                      <input
+                        type="email"
+                        className="form-control"
+                        placeholder="admin001@hupchop.com"
+                        readOnly
+                      />
+                      <small className="form-text text-muted text-danger">
+                        Cannot be edited *
+                      </small>
+                    </div>
                   </div>
+
                 </div>
               </div>
             </div>

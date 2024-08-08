@@ -5,7 +5,13 @@ import { RiArrowRightSLine } from 'react-icons/ri';
 function Sidebar() {
   const location = useLocation();
 
+  // Function to determine if a link is active
   const isActive = (path: string) => {
+    // Log the current path and the path being checked
+    console.log('Current Path:', location.pathname);
+    console.log('Checking Path:', path);
+    
+    // Return active class if paths match
     return location.pathname === path ? 'bg-pink-100 text-red-500 font-bold' : '';
   };
 
@@ -60,7 +66,7 @@ function Sidebar() {
               </li>
               <li className="nxl-item nxl-hasmenu">
                 <Link to="/wallet" className={`nxl-link ${isActive('/wallet')}`}>
-                  <span className="nxl-micon"><i className="feather-dollar-sign"></i></span>
+                  <span className="nxl-micon"><i className="">₦</i></span>
                   <span className="nxl-mtext">Wallet</span>
                 </Link>
               </li>
@@ -74,7 +80,7 @@ function Sidebar() {
                 <label>Logout</label>
               </li>
               <li className="nxl-item nxl-hasmenu">
-                <Link to="/" className={`nxl-link ${isActive('/')}`}>
+                <Link to="/logout" className={`nxl-link ${isActive('/logout')}`}>
                   <span className="nxl-micon"><i className="feather-power"></i></span>
                   <span className="nxl-mtext">Sign Out</span>
                 </Link>
