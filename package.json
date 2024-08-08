@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@types/react": "^18.3.3",
+    "apexcharts": "^3.52.0",
+    "jquery": "^3.7.1",
+    "jquery-circle-progress": "^1.2.2",
+    "react-apexcharts": "^1.4.1",
+    "react-js-pagination": "^3.0.3",
+    "reactstrap": "^9.2.2"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.5.30"
+  }
+}
